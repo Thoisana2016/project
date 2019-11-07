@@ -1,33 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-      <?php
-	  
-	  
-	  include('new.php');
-	  
-	  $username=$_POST['username'];
-	  $useremail=$_POST['email'];
-	  $userpassword=$_POST['password'];
-	  $usertype=$_POST['type'];
-	  
-	  if(!$_POST['register'])
-	  {
-			echo "All the fields are required";
-	  }
-	  else
-		{
-			$sql="INSERT into register(username,email,password,type)
-			values ('$username', '$useremail', '$userpassword', 'usertype')" ;
-			
-			if(mysqli_query($conn, $sql))
-			{
-				echo "Registered succesfully";
-			}
-			else{
-			echo "Something went wrong try again with new username/email";
-			}
-		}
-	?>
 <head>
 	<!-- meta tag -->
     <meta charset="UTF-8">
@@ -53,22 +25,22 @@
 <div class="signup-outer">
 	<h1>An investment in knowledge pays the best interest.</h1>
 	<div class="signup">
-		<form action="signup.php" method="post">
+		<form action="signup_action.php" method="post">
 			<table align="center">
 				<tr>
 					<td>User Name : </td>
-					<td><input type="text" name="username" placeholder="Enter user name" required></td>
+					<td><input type="text" name="username" placeholder="Enter Username" required></td>
 				</tr>
 				<tr>
 					<td>Email : </td>
-					<td><input type="text" name="email" placeholder="Enter e-mail"required></td>
+					<td><input type="text" name="email" placeholder="Enter Email" required></td>
 				</tr>
 				<tr>
 					<td>Password: </td>
-					<td><input type="password" name="password" required></td>
+					<td><input type="password" name="password" placeholder="Enter Password" required></td>
 				</tr>
 			</table>
-			<input type="radio" name="type" required>Student
+			<input type="radio" name="type" required>Student<br>
 			<input type="radio" name="type" required>Faculty<br>
 			<button class="btn btn-default" align="center" name="register" value="register">Register</button>
 		</form>

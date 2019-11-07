@@ -19,7 +19,9 @@
 			
 			if(mysqli_query($conn, $sql))
 			{
-				echo "Registered succesfully";
+				//echo "Registered succesfully";
+				$Message = "Success";
+				header("Location: afterSignup.php?Message=" . urlencode($Message));
 			}
 			else{
 			echo "Something went wrong try again with new username/email";
