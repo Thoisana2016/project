@@ -40,8 +40,8 @@
 					<td><input type="password" name="password" placeholder="Enter Password" required></td>
 				</tr>
 			</table>
-			<input type="radio" name="type" required>Student<br>
-			<input type="radio" name="type" required>Faculty<br>
+			<input type="radio" name="type" value="Student" required>Student<br>
+			<input type="radio" name="type" value="Faculty" required>Faculty<br>
 			<button class="btn btn-default" align="center" name="register" value="register">Register</button>
 		</form>
 		<p>Already a User? <a href="login.html">Log In</a></p>
