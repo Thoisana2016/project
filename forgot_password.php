@@ -30,8 +30,12 @@
 		<form action="data_controller.php" method="post">
 			<table align="center">
 				<tr>
+					<td>Username : </td>
+					<td><input type="text" name="username" placeholder="Enter Username" required /></td>
+				</tr>
+				<tr>
 					<td>E-mail : </td>
-					<td><input type="text" name="e-mail" placeholder="Enter Email" required /></td>
+					<td><input type="email" name="e-mail" placeholder="Enter Email" required /></td>
 				</tr>
 				<tr>
 					<td>New Password: </td>
