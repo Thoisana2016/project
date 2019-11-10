@@ -33,7 +33,7 @@
 				</tr>
 				<tr>
 					<td>Email : </td>
-					<td><input type="text" name="email" placeholder="Enter Email" required></td>
+					<td><input type="email" name="email" placeholder="Enter Email" required></td>
 				</tr>
 				<tr>
 					<td>Password: </td>
